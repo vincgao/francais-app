@@ -2,8 +2,12 @@ import { Button } from "antd";
 import { ReactElement } from "react";
 import { Word } from "../interfaces";
 
-export const WordButton = (props: { word: Word }): ReactElement => {
-  const { word } = props;
+export const WordButton = (props: {
+  query: string;
+  word: Word;
+}): ReactElement => {
+  const { query, word } = props;
+  const fontWeight = query === word.word ? "bold" : "normal";
   return (
     <div>
       <Button
@@ -12,7 +16,7 @@ export const WordButton = (props: { word: Word }): ReactElement => {
           height: "100%",
           paddingTop: 15,
           paddingBottom: 15,
-          fontWeight: "bold",
+          fontWeight: fontWeight,
           margin: 10,
         }}
         onClick={() => {
