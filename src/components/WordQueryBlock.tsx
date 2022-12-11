@@ -9,6 +9,9 @@ export const WordQueryBlock = (props: { query: WordQuery }): ReactElement => {
   return (
     <div>
       <List
+        style={{
+          width: "100vw",
+        }}
         grid={{
           column: 6,
         }}

@@ -7,6 +7,13 @@ export const WordButton = (props: { word: Word }): ReactElement => {
   return (
     <div>
       <Button
+        style={{
+          width: "100%",
+          height: "100%",
+          paddingTop: 15,
+          paddingBottom: 15,
+          fontWeight: "bold",
+        }}
         onClick={() => {
           console.log(word.word);
           new Audio(word.url).play();
