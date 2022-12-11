@@ -13,9 +13,9 @@ export const WordButton = (props: { word: Word }): ReactElement => {
           paddingTop: 15,
           paddingBottom: 15,
           fontWeight: "bold",
+          margin: 10,
         }}
         onClick={() => {
-          console.log(word.word);
           new Audio(word.url).play();
         }}
       >

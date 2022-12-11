@@ -9,6 +9,13 @@ function App() {
       theme={{
         token: {
           fontSize: 20,
+          fontFamily: "PingFang SC",
+          margin: 0,
+        },
+        components: {
+          Button: {
+            lineWidth: 2,
+          },
         },
       }}
     >

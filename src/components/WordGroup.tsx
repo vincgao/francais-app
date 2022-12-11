@@ -11,7 +11,9 @@ export const WordGroup = (props: { words: WordQuery[] }): ReactElement => {
         dataSource={words}
         renderItem={(item: WordQuery) => (
           <List.Item>
-            <WordQueryBlock query={item} />
+            <div>
+              <WordQueryBlock query={item} />
+            </div>
           </List.Item>
         )}
       />
