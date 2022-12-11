@@ -34,13 +34,13 @@ export const WordQueryBlock = (props: { query: WordQuery }): ReactElement => {
           style={{
             fontSize: 25,
             fontWeight: "bold",
-            fontFamily: "PingFang SC",
+            fontFamily: "arial",
             marginTop: 2,
             marginBottom: 2,
           }}
           rel="noreferrer"
         >
-          {query.query}
+          {`${query.query} [${query.pron}]`}
         </a>
       </div>
 

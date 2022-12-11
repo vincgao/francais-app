@@ -65,8 +65,8 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "start": "node /Users/vinc/vinc/node_projects/collins/api.js && node scripts/start.js",
+    "build": "node /Users/vinc/vinc/node_projects/collins/api.js && node scripts/build.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
