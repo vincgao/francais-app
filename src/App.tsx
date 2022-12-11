@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <WordGroup words={words} />
-      <WordGroup words={words} />
     </div>
   );
 }

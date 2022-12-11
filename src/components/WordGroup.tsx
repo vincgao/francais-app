@@ -1,20 +1,17 @@
 import { List } from "antd";
 import { ReactElement } from "react";
-import { Word } from "../interfaces";
-import { WordButton } from "./WordButton";
+import { WordQuery } from "../interfaces";
+import { WordQueryBlock } from "./WordQueryBlock";
 
-export const WordGroup = (props: { words: Word[] }): ReactElement => {
+export const WordGroup = (props: { words: WordQuery[] }): ReactElement => {
   const { words } = props;
   return (
     <div>
       <List
-        grid={{
-          column: 4,
-        }}
         dataSource={words}
-        renderItem={(item: Word) => (
+        renderItem={(item: WordQuery) => (
           <List.Item>
-            <WordButton word={item} />
+            <WordQueryBlock query={item} />
           </List.Item>
         )}
       />

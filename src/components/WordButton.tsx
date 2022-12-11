@@ -4,17 +4,12 @@ import { Word } from "../interfaces";
 
 export const WordButton = (props: { word: Word }): ReactElement => {
   const { word } = props;
-  console.log(word.url);
-
-  let audio = new Audio(word.url);
-
   return (
     <div>
-      {/* <ReactAudioPlayer src={word.url} autoPlay controls /> */}
       <Button
         onClick={() => {
           console.log(word.word);
-          audio.play();
+          new Audio(word.url).play();
         }}
       >
         {word.word}
