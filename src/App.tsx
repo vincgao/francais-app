@@ -1,28 +1,12 @@
 import "./App.css";
-import { WordButton } from "./components/WordButton";
+import { WordGroup } from "./components/WordGroup";
 import { words } from "./data";
-import logo from "./logo.svg";
-
-const audio = new Audio("");
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <WordButton word={words[0]} />
-      </header>
+      <WordGroup words={words} />
+      <WordGroup words={words} />
     </div>
   );
 }

@@ -13,7 +13,7 @@ export const WordButton = (props: { word: Word }): ReactElement => {
       {/* <ReactAudioPlayer src={word.url} autoPlay controls /> */}
       <Button
         onClick={() => {
-          console.log("play");
+          console.log(word.word);
           audio.play();
         }}
       >
