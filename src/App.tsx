@@ -1,6 +1,9 @@
-import { Button } from "antd";
 import "./App.css";
+import { WordButton } from "./components/WordButton";
+import { words } from "./data";
 import logo from "./logo.svg";
+
+const audio = new Audio("");
 
 function App() {
   return (
@@ -18,7 +21,7 @@ function App() {
         >
           Learn React
         </a>
-        <Button>hahahha</Button>
+        <WordButton word={words[0]} />
       </header>
     </div>
   );
