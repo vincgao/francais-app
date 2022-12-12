@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/francais-app/static/css/main.073c9b0a.css",
+    "main.js": "/francais-app/static/js/main.c76e92d8.js",
+    "static/js/787.9c27834d.chunk.js": "/francais-app/static/js/787.9c27834d.chunk.js",
+    "index.html": "/francais-app/index.html",
+    "main.073c9b0a.css.map": "/francais-app/static/css/main.073c9b0a.css.map",
+    "main.c76e92d8.js.map": "/francais-app/static/js/main.c76e92d8.js.map",
+    "787.9c27834d.chunk.js.map": "/francais-app/static/js/787.9c27834d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.c76e92d8.js"
+  ]
+}
